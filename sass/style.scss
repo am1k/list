@@ -1,0 +1,162 @@
+@import "compass/reset";
+
+$path-to: "../img/";
+$color-white: #fff;
+$color-blue: #61c8f9;
+
+
+.header-list {
+  background: url($path-to + "bg-header.png");
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  z-index: 1;
+
+  p {
+    position: absolute;
+    left: 46%;
+    top: 20%;
+    font-family: "Helvetica Neue";
+    font-size: 38px;
+    color: $color-white;
+
+  }
+}
+.more {
+  background: url($path-to + "header-more.png");
+  width: 40px;
+  height: 28px;
+  float: left;
+  margin: 15px 0 0 30px;
+}
+.add {
+  background: url($path-to +  "header-add.png");
+  width: 33px;
+  height: 33px;
+  float: right;
+  margin: 15px 30px 0 0;
+}
+.list {
+
+  ul li {
+    overflow: hidden;
+    position: relative;
+    height: 106px;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      background: url($path-to + "divide.png");
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+    }
+
+    a {
+      display: block;
+      float: left;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      position: relative;
+
+/*      &:before {
+        content: ' ';
+        position: absolute;
+        background: url($path-to +  "blue-line-list-before.jpg")no-repeat;
+        width: 8px;
+        height: 138px;
+        right: 95%;
+      }*/
+    }
+  }
+}
+.messages-count {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #dd0017;
+  border-radius: 50%;
+  color: $color-white;
+  border: 3px solid $color-white;
+}
+.more-details {
+  margin-right: 5px;
+}
+.header-details {
+  overflow: hidden;
+  min-width: 250px;
+}
+.name {
+  float: left;
+  font-family: Arial;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.stats.online {
+  background: url( $path-to + "stats.png")no-repeat;
+  width: 18px;
+  height: 18px;
+  float: left;
+  padding-right: 15px;
+}
+.time-sent {
+  float: right;
+}
+.message {
+  font-family: Arial;
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+.time-sent {
+  font-family: Arial;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.active-menu {
+  float: left;
+  background-color: $color-blue;
+  height: 104px;
+
+  img {
+    display: block;
+    float: right;
+    padding: 29px 10px 29px 0;
+  }
+
+  a {
+    &:before {
+      display: none;
+      background-color: $color-blue;
+    }
+  }
+}
+.list-message {
+  margin-left: -295px;
+}
+.detected {
+  background:$color-blue url($path-to + "detected.png")no-repeat;
+  width: 48px;
+  height: 48px;
+  float: right;
+  margin: 29px 0;
+}
+.trash {
+  background:$color-blue url($path-to + "trash.png")no-repeat;
+  width: 48px;
+  height: 49px;
+  float: right;
+  margin: 29px 0;
+}
+.star {
+  background:$color-blue url($path-to + "action-star.png")no-repeat;
+  width: 50px;
+  height: 46px;
+  float: right;
+  margin: 29px 0;
+}
